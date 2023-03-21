@@ -4,13 +4,4 @@
 In diesem Projekt verwende ich [gpt2](https://huggingface.co/gpt2).
 
 ## Verwendete Daten
-Die für dieses Modell verwendeten Trainingsdaten wurden nicht als Datensatz veröffentlicht, den man durchsuchen kann. Wir wissen, dass sie eine Menge ungefilterter Inhalte aus dem Internet enthalten, die alles andere als neutral sind.
-Mher dazu [hier](https://github.com/openai/gpt-2/blob/master/model_card.md#out-of-scope-use-cases)
-
-## Verwendete Library
-### Pytorch
-Um pytroch mit python3.11 zu verwenden, kann man noch keinen normalen Release beziehen.
-Dafür kann man mit dem folgenden command den nightly build verwenden:
-```python
-pip install --pre torch -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
-```
+Das OpenAI-Team wollte dieses Modell mit einem möglichst großen Korpus trainieren. Um es zu erstellen, wurden alle Webseiten von ausgehenden Links auf Reddit, die mindestens 3 Karma erhalten haben, ausgewertet. Beachten Sie, dass alle Wikipedia-Seiten aus diesem Datensatz entfernt wurden, so dass das Modell nicht auf einem Teil von Wikipedia trainiert wurde. Der resultierende Datensatz (genannt WebText) wiegt 40 GB an Texten, wurde aber nicht veröffentlicht.
